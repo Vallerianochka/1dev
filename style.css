@@ -20,7 +20,7 @@
 }
 
 .logo_place_header {
-    background-image: url(/images/logo_place_header.svg);
+    background-image: url(./images/logo_place_header.svg);
     width: 228px;
     height: 32px;
     background-size: contain;
@@ -47,12 +47,26 @@
     border: 3px solid red;
 }
 
+.header_images {
+    border: 3px solid red;
+    position: relative;
+}
+
 .header__main-illustration {
-    background-image: url(/images/two_again.png/);
+    background-image: url(./images/two_again.png);
     position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 765px;
     height: 608px;
     bottom:0%;
     right: 0%;
+    border: 3px solid red;
+}
+
+.header__square-pic {
+    position: absolute;
+    background-color: #2f80ed;
+    background-size: 568px 568px;
     border: 3px solid red;
 }
