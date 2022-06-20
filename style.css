@@ -1,0 +1,58 @@
+.page {
+    min-width: 1100px;
+    max-width: 1600px;
+    margin: 0 auto;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    border: 3px solid red;
+}
+
+
+.header {
+    background-color: #f2f2f2;
+    height: 100vh;
+    max-height: 600px;
+    min-height: 756px;
+    display: flex;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: 3px solid red;
+}
+
+.logo_place_header {
+    background-image: url(/images/logo_place_header.svg);
+    width: 228px;
+    height: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    position: absolute;
+    margin: 30px 0 0 64px;
+    border: 3px solid red;
+}
+
+.header__content {
+        position: absolute;
+        width: 338px;
+        left: 64px;
+        bottom: 30px;
+        border: 3px solid red;
+    }
+
+.left-block {
+    display: flex;
+    align-items: center;
+    width: 730px;
+    margin-left: 64px;
+    border: 3px solid red;
+}
+
+.header__main-illustration {
+    background-image: url(/images/two_again.png/);
+    position: absolute;
+    width: 765px;
+    height: 608px;
+    bottom:0%;
+    right: 0%;
+    border: 3px solid red;
+}
