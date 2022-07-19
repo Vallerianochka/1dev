@@ -6,7 +6,7 @@
     border: 3px solid red;
 }
 
-
+/* 1. стили Header */
 .header {
     background-color: #f2f2f2;
     height: 100vh;
@@ -30,7 +30,7 @@
     margin: 30px 0 0 64px;
 }
 
-.header__content {
+.header__subtitle {
         position: absolute;
         width: 388px;
         left: 64px;
@@ -40,7 +40,7 @@
         border: 3px solid red;
     }
 
-.left-block {
+.header__title {
     display: flex;
     align-items: center;
     width: 730px;
@@ -50,13 +50,8 @@
     border: 3px solid red;
 }
 .header__link::after {
-    content: ''
+    content: "  \2192";
 }
-
-/* .header_images {
-    border: 3px solid rgb(23, 216, 230);
-    position: relative;
-} */
 
 .header__main-illustration {
     background-image: url(./images/two_again.png);
@@ -79,9 +74,12 @@
     width: 568px;
 }
 
+/* 2. стили Description */
 .description {
     display: flex;
     justify-content: center;
+    margin-top: 100px;
+    padding: 0;
     border: 3px solid rgb(9, 255, 0);
 }
 
@@ -89,8 +87,8 @@
     display: flex;
     justify-content: space-between;
     width: 80%;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    /*margin-top: 100px;
+    margin-bottom: 100px;*/
 }
 
 .two-columns__brief {
@@ -128,53 +126,148 @@
     margin: 0;
 }
 
+/* 3. стили Digits */
+
 .digits {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    padding: 0;
     border: 3px solid rgb(9, 255, 0);
 }
 
 .section-title {
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
+    line-height: 1.15;
+    font-weight: 600;
+    font-size: 60px;
+    margin: 0 0 20px 0;
 }
 
-.section-title__title {
-    border: 3px solid red;
-    width: 60%;
-
-}
-.section-title__section-subtitle {
-    border: 3px solid red;
-    width: 60%;
+.section-subtitle {
+    line-height: 34px;
+    font-weight: normal;
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
 }
 
 .table {
     width: 1100px;
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
-
-
+    justify-content: space-between;
 }
 
 .table__cell {
-    border: 3px solid rgb(255, 0, 200);
     width: 250px;
+    margin: 60px 0 0 0;
 }
 
 .table__heading {
-    padding: 0 0 20px 0;
-    font-size: 60px;
+    line-height: 1.15;
+    font-weight: 600;
+    margin: 0;
+    font-size: 24px;
 }
 
-.faynman {
+.table__text {
+    margin: 20px 0 0 0;
+    line-height: 1.2;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+/* 4. стили Feynman */
+.feynman {
     background-color: #f2f2f2;
-    border: 3px solid rgb(255, 0, 200);
-    height: 100vh;
+    background-image: url(./images/feynman.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 867px 637px;
+    height: 890px;
     max-height: 600px;
     min-height: 756px;
-
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    padding: 0;
+    border: 3px solid rgb(0, 255, 76);
 }
+
+.feynman__title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 648px;
+    margin: 100px 0 0 0;
+    line-height: 1.15;
+    font-size: 120px;
+    font-weight: 600;
+}
+
+.feynman__subtitle {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 70px;
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.feynman__link {
+    position: absolute;
+    color: #2f80ed;
+    top: 50%;
+    right: 48px;
+    line-height: 51px;
+    font-size: 36px;
+    text-decoration: none;
+    font-weight: normal;
+}
+.feynman__link::after {
+    content: "  \2192";
+}
+
+/* 5. стили Kaufman */
+.kaufman {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 90px 0 90px 0;
+    background-color: #000000;
+    overflow: hidden;
+    border: 3px solid rgb(9, 255, 0);
+}
+
+.table__cell_theme_dark {
+    width: 200px;
+    margin: 80px 0 0 0;
+    z-index: 1;
+}
+
+.section-title_theme_dark, .section-subtitle_theme_dark, .table__text_theme_dark, .table__heading_theme_dark {
+    color: #ffffff;
+    z-index: 1;
+}
+
+.kaufman__triangle {
+    background-image: url(./images/kaufman-triangle.svg);
+    position: absolute;
+    width: 877px;
+    height: 877px;
+    right: -120px;
+}
+
+
